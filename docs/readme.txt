@@ -1,7 +1,5 @@
 TopSecret documentation starter file - Homework 2
-2/5/26
 Adam Ismail (1-10)
-
 For this homework, I am member D (cipher)
 This is a function that replaces ciphered text as input and returns deciphered text using a map. It should be able to use any key.
 
