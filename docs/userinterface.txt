@@ -31,7 +31,6 @@ First week tasks:
         print error if not file 01 02 or 03
         print error if more than 2 parameters
 
-
     Test cases
 
         If run with 0 arguments then lists the numbered files
