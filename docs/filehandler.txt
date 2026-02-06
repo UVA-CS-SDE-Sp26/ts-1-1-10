@@ -1,0 +1,19 @@
+TopSecret documentation, filehandler
+William Crouch 2/6/2026
+
+For this assignment, I am member B- filehandler
+
+My module will search the folder "data" when requested, it will find the target file and return its contents
+It has one argument, the name of the file
+
+Intended behavior:
+
+    Called on "wiki"
+        enters the data folder
+        finds the wiki object and returns it
+    Called on a name that does not exist in the database
+        sysout("file not found")
+
+    Test Cases:
+    If run with no arguments, return no file input
+
