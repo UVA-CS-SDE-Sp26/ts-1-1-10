@@ -4,7 +4,6 @@ For this homework, I am member A (command line interface)
 This step allows for the user to easily run the command line interface
 The program accepts parameters, then it ends when it does what is asked or prints error messages.
 
-
 First week tasks:
     Command prompt basics logic
 
