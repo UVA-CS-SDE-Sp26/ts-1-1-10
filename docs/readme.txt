@@ -1,1 +1,54 @@
-TopSecret documentation starter file
+TopSecret documentation starter file - Homework 2
+Adam Ismail (1-10)
+For this homework, I am member D (cipher)
+This is a function that replaces ciphered text as input and returns deciphered text using a map. It should be able to use any key.
+
+Week 3:
+
+    Design cipher logic
+        CipherService - String decipher(String cipherText, Path keyPath)
+            Loads + validates key + returns deciphered text)
+
+        CipherKey - Map<Character, Character> decodeMap
+            Represents the key in memory
+
+        CipherKeyLoader - CipherKey load(Path keyPath) - throws IOException, InvalidCipherKeyException if incorrect
+            Reads the key file and constructs a CipherKey
+
+        CipherKeyValidator - void validate(String plain, String cipher) - throws InvalidCipherKeyException if incorrect
+            Checks that the plain string and the cipher string match
+
+        InvalidCipherKeyException - custom exception
+            Clean error signaling
+
+    Decide validation rules
+        - File exists and can be read
+        - Outputs exactly 2 non-empty lines
+        - Both lines are the same length
+        - No duplicate characters in either line
+
+    Write test cases
+        CipherServiceTest
+            End-to-end deciphering
+            Default vs alternate key
+            Punctuation and spacing behavior
+
+        CipherKeyLoaderTest
+            Loads valid key file
+            Missing key file(s)
+            Key file with wrong number of lines
+
+        CipherKeyValidatorTest
+            Duplicate characters
+            Mismatched line lengths
+            Empty key lines
+
+    Document everything here in cipher.txt
+    Write a Week 1 (of groupwork) self-reflection
+
+Week 4
+    Implement cipher class
+    Implement tests
+    Run full test suite
+    Fix edge cases
+

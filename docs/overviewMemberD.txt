@@ -45,7 +45,7 @@ Week 3:
             Mismatched line lengths
             Empty key lines
 
-    Document everything here in cipher.txt
+    Document everything here in cipher
     Write a Week 1 (of groupwork) self-reflection
 
 Week 4

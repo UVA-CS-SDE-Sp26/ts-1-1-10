@@ -1,0 +1,35 @@
+TopSecret documentation starter file - Homework 2
+Gabriel Espinola (1-10)
+For this homework, I am member A (command line interface)
+This step allows for the user to easily run the command line interface
+The program accepts parameters, then it ends when it does what is asked or prints error messages.
+
+First week tasks:
+    Command prompt basics logic
+
+        Running the program in the terminal
+            java topsecret
+            Program exits
+
+        Running with no arguments
+            list the numbered files avaliable
+            program exits
+
+        Running with a number as an argument (file 01 for example)
+            java topsecret 01
+            displays the contents of the corresponding file of that argument
+            program exits
+
+        Running with two parameters (file 01 for example)
+            java topsecret 01 alternateKey
+            Specifies an alternate key to use when dechipering
+            Displays the contents of the file using that alternate key
+            program exits
+
+    Errors
+        print error if not file 01 02 or 03
+        print error if more than 2 parameters
+
+    Test cases
+        If run with 0 arguments then lists the numbered files
+        If run java topsecret 03 then prints the contents of file 3
