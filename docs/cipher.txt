@@ -2,12 +2,12 @@ Homework 2
 Adam Ismail (1-10)
 For this homework, I am member D (cipher)
 
-
-My job is to create a function that replaces ciphered text as input and returns deciphered text using a map. It should be able to use any key.
+My job is to create tests for a function that replaces ciphered text as input and returns deciphered text using a map.
+It should be able to use any key.
 
 Week 3:
 
-    Design cipher logic
+    Potential cipher logic (methods)
         CipherService - String decipher(String cipherText, Path keyPath)
             Loads + validates key + returns deciphered text)
 
@@ -29,27 +29,16 @@ Week 3:
         - Both lines are the same length
         - No duplicate characters in either line
 
-    Write test cases
-        CipherServiceTest
-            End-to-end deciphering
-            Default vs alternate key
-            Punctuation and spacing behavior
-
-        CipherKeyLoaderTest
-            Loads valid key file
-            Missing key file(s)
-            Key file with wrong number of lines
-
-        CipherKeyValidatorTest
-            Duplicate characters
-            Mismatched line lengths
-            Empty key lines
+    Write test cases for:
+        - deciphering text correctly
+        - handling invalid keys
+        - punctuation handling
+        - empty input
+        - key validation failures
 
     Document everything here in cipher
     Write a Week 1 (of groupwork) self-reflection
 
 Week 4
-    Implement cipher class
     Implement tests
-    Run full test suite
     Fix edge cases
