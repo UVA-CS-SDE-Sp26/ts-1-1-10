@@ -1,0 +1,15 @@
+Homework 2
+Program Control
+Michael MacDonough
+2/13/2026
+
+For this Homework, I am member C and am responsible for connecting the command line to the file handler
+This program must interpret what is entered in the command line and then request that information from the file hander.
+It then must return the information back to the command in a readable format
+
+
+Test Cases:
+If no files exist, program returns a message explain the error rather than crashing
+Program returns list of files in proper format (e.g. 01 filea.txt)
+Program handles input that doesn't match a file
+Program correctly handles no parameter entry
