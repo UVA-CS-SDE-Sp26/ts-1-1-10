@@ -1,5 +1,4 @@
-package FileHandler;
-
+import FileHandler.FileHandler;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
