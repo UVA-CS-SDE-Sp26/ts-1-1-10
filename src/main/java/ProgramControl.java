@@ -13,8 +13,16 @@ public class ProgramControl {
       this.ui = new CliArgs(args);
     }
 
+    public ProgramControl() {
+        this.cipher = new CipherClass();
 
-    String fileNumber = ui.getFileNumber();
+    }
+
+    public void setFileContent(String fileContent) {
+        this.fileContent = fileContent;
+    }
+
+    //String fileNumber = ui.getFileNumber();
 
     public String getFileContent(){
         //call filemanager class
