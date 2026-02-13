@@ -23,11 +23,18 @@ public class TopSecret {
         }
 
         ProgramControl program = new ProgramControl(args);
-        System.out.println("Displaying file " + ui.getFileNumber());
-        System.out.println(program.decipher());
 
-        if (ui.getKey() != null) {
-            System.out.println("Using alterate key: " + ui.getKey());
+        try {
+            System.out.println("Displaying file " + ui.getFileNumber());
+            System.out.println(program.decipher());
+
+            if (ui.getKey() != null) {
+                System.out.println("Using alternate key: " + ui.getKey());
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error: Unable to decipher using the provided key.");
         }
+
     }
 }

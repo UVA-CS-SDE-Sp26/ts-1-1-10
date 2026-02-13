@@ -1,6 +1,5 @@
 import FileHandler.FileHandler;
 import cipher.CipherClass;
-import javax.crypto.Cipher;
 import java.io.FileNotFoundException;
 
 public class ProgramControl {
@@ -35,11 +34,24 @@ public class ProgramControl {
 
 
     public String getFileContent() throws FileNotFoundException {
-        //call filemanager class
         assert ui != null;
-        return file.readFile(fileNumber);
-        //return "";
+
+        int index;
+        try {
+            index = Integer.parseInt(fileNumber) - 1;
+        } catch (NumberFormatException e) {
+            throw new FileNotFoundException("Invalid file number: " + fileNumber);
+        }
+
+        var files = file.listFiles(); // sorted list of filenames
+
+        if (index < 0 || index >= files.size()) {
+            throw new FileNotFoundException("File not found: " + fileNumber);
+        }
+
+        return file.readFile(files.get(index));
     }
+
 
 
     public String decipher() throws FileNotFoundException {
