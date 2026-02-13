@@ -10,7 +10,6 @@ public class CliArgsTests {
         assertEquals("01", ui.getFileNumber(), "File number should be '01'.");
         assertNull(ui.getErrorMessage(), "Should be no error with a valid file number.");
     }
-
     @Test
     void moreThanTwoArgumentGivesError() {
         CliArgs ui = new CliArgs(new String[]{"03", "key.txt", "another key"});
