@@ -7,6 +7,7 @@ public class TopSecret {
 
         CliArgs ui = new CliArgs(args);
 
+
         if (ui.getErrorMessage() != null) {
             System.out.println(ui.getErrorMessage());
             return;
@@ -16,9 +17,12 @@ public class TopSecret {
             System.out.println("01 filea.txt");
             System.out.println("02 fileb.txt");
             System.out.println("03 filec.txt");
+            return;
         }
 
+        ProgramControl program = new ProgramControl(args);
         System.out.println("Displaying file " + ui.getFileNumber());
+        System.out.println(program.decipher());
 
         if (ui.getKey() != null) {
             System.out.println("Using alterate key: " + ui.getKey());
