@@ -6,6 +6,7 @@ public class TopSecret {
     public static void main(String[] args) {
 
         CliArgs ui = new CliArgs(args);
+        ProgramControl program = new ProgramControl(args);
 
         if (ui.getErrorMessage() != null) {
             System.out.println(ui.getErrorMessage());
@@ -19,6 +20,7 @@ public class TopSecret {
         }
 
         System.out.println("Displaying file " + ui.getFileNumber());
+        System.out.println(program.decipher());
 
         if (ui.getKey() != null) {
             System.out.println("Using alterate key: " + ui.getKey());
