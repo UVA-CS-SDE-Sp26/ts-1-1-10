@@ -31,5 +31,6 @@ First week tasks:
         print error if more than 2 parameters
 
     Test cases
-        If run with 0 arguments then lists the numbered files
-        If run java topsecret 03 then prints the contents of file 3
+        If run with file 01 should print file 01
+        If there are more than 2 arguments should be error message
+        If user inpunts a file that is not 01 02 or 03 should be error message
