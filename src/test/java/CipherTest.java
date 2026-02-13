@@ -2,6 +2,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import cipher.CipherClass;
+
 /*
     What should I test?
     - deciphering text correctly
@@ -83,7 +85,7 @@ public class CipherTest {
 
         CipherClass cipher = new CipherClass();
 
-        assertFalse("", cipher.decipher(""));
+        assertFalse(cipher.decipher("").isEmpty());
     }
 
      */

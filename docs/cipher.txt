@@ -40,5 +40,11 @@ Week 3:
     Write a Week 1 (of groupwork) self-reflection
 
 Week 4
-    Implement tests
-    Fix edge cases
+    I have created the methods for each of the classes regarding cipher. It is meant to support deciphering of files
+    using key-based substitution. The key is stored in cipher.txt. During execution, this file is loaded to ensure
+    that the key still exists, and are equal in length. Then a map is constructed from cipher to plain characters to
+    enable deciphering. The CipherService class performs the decipher operation, returning unmapped characters (such
+    as punctuation or symbols) unchanged. An InvalidCipherKeyException is thrown if the key file cannot be read or fails
+    validation. Unit tests were created to verify correct deciphering of lowercase and uppercase characters, mixed
+    alphanumeric input, and handling of unmapped characters. All tests pass successfully and confirm that the cipher
+    module functions according to the project requirements.
