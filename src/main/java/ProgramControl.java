@@ -44,11 +44,18 @@ public class ProgramControl {
 
     public String decipher() throws FileNotFoundException {
         fileContent = getFileContent();
+        if(ui.getKey() != null) {
+            return cipher.decipher(fileContent, ui.getKey());
+        }
         return cipher.decipher(fileContent);
     }
 
     public String decipherTest() throws FileNotFoundException {
         return cipher.decipher(fileContent);
+    }
+
+    public String getKey() throws FileNotFoundException {
+        return ui.getKey();
     }
 
 
