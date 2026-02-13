@@ -14,7 +14,14 @@ public class CipherClass {
         );
     }
 
+    // Default key
     public String decipher(String input) {
         return service.decipher(input, defaultKeyPath);
+    }
+
+    // Alternate key
+    public String decipher(String input, String keyFileName) {
+        Path keyPath = Path.of("ciphers", keyFileName);
+        return service.decipher(input, keyPath);
     }
 }
